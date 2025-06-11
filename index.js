@@ -7,7 +7,7 @@ app.use(express.json());
 
 
 app.get('/getdata/:id',(req,res)=>{
-    console.log(req.params);
+    console.log(req.params.id);
     res.send("Hello World 3");
 });
 app.post('/createdata', (req,res) => {
